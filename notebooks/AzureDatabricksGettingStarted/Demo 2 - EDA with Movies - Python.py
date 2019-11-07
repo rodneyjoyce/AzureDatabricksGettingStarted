@@ -1,6 +1,6 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC #### Interactive Notebooks - Menu, Clusters, Cells, Shortcuts, Markdown
+# MAGIC #### Interactive Notebooks
 
 # COMMAND ----------
 
@@ -14,11 +14,11 @@ display(dbutils.fs.ls("dbfs:/databricks-datasets/Rdatasets/data-001/csv/ggplot2/
 
 # COMMAND ----------
 
-moviesDF = spark.read.csv("/databricks-datasets/Rdatasets/data-001/csv/ggplot2/movies.csv", header="true", inferSchema="true")
+moviesDF = spark.read.csv("/databricks-datasets/Rdatasets/data-001/csv/ggplot2/movies.csv")
 
 # COMMAND ----------
 
-# MAGIC %md ##### What are the 2 problems with the Dataframe above?
+# MAGIC %md ##### What are the 2 problems with the Dataframe above? Let's fix it...
 
 # COMMAND ----------
 
